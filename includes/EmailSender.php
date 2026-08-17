@@ -19,12 +19,12 @@ class EmailSender {
         $this->mail->isSMTP();
         $this->mail->Host       = 'smtp.gmail.com';
         $this->mail->SMTPAuth   = true;
-        $this->mail->Username   = 'thefpvt@gmail.com';   // your email
-        $this->mail->Password   = 'uasf cfmi znkp pmin'; // your app password
+        $this->mail->Username   = '';   // your email
+        $this->mail->Password   = ''; // your app password
         $this->mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $this->mail->Port       = 587;
 
-        $this->mail->setFrom('thefpvt@gmail.com', 'NSS Navneet');
+        $this->mail->setFrom('', 'NSS Navneet');
     }
 
     public function sendEmail($to, $subject, $message, $isHTML = true) {
@@ -83,13 +83,13 @@ $mail->Debugoutput = 'html';
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'thefpvt@gmail.com'; 
-        $mail->Password = 'uasf cfmi znkp pmin';
+        $mail->Username = ''; 
+        $mail->Password = '';
 
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('yourgmail@gmail.com', 'NAVNEET NSS');
+        $mail->setFrom('', 'NAVNEET NSS');
 
         return $mail;
 
